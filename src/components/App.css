@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom right, #28a3aa, #396baa);
+  width: 90%;
+  margin: 20% auto;
+  padding-bottom: 20px;
+}
+
+/* input  */
+
+.city-input-container {
+  width: 300px;
+  margin: auto;
+}
+
+.city-input {
+  width: 90%;
+  height: 40px;
+  margin-top: 30px;
+  border: 2px solid rgba(00, 000, 100, 0.3);
+  border: none;
+  border-radius: 3px;
+}
+
+.city-input:focus {
+  outline: none;
+}
+
+.city-input[type='text'] {
+  font-size: 32px;
+  text-align: center;
+}
+
+/* city name */
+h1 {
+  font-family: 'Helvetica Neue', Roboto;
+  color: white;
+}
+/* weather card */
+
+.weather-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.weather-card {
+  flex: 1;
+  font-family: 'Roboto', sans-serif;
+  margin: 5px;
+  padding: 5px;
+  background: rgba(200, 200, 255, 0.6);
+  background: #dedeff;
+  border: 2px solid rgba(100, 150, 200, 0.7);
+  border-radius: 3px;
+  width: 100px;
+  color: grey;
+}
+
+.day {
+  margin: 5px;
+  color: grey;
+}
+
+.weatherIcon {
+  width: 70px;
+}
+
+@media (max-width: 500px) {
+  .App {
+    margin: 0;
+    width: 100%;
+  }
+
+  .weather-container {
+    display: block;
+  }
+  .weather-card {
+    display: inline;
+    font-size: 2em;
+    display: block;
+    margin: 5px auto;
+    width: 90%;
+    padding: 20px 0;
+  }
+  .weatherIcon {
+    width: 180px;
+  }
+}
