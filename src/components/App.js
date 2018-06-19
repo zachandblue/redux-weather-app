@@ -59,7 +59,6 @@ class App extends Component {
   }
 
   getGeneralForecast(day) {
-    let e;
     let o = Object.values(day).reduce(
       function(o, c) {
         let s = c.weather[0].main;
@@ -67,13 +66,12 @@ class App extends Component {
 
         if (!o.freq[o.most] || o.freq[s] > o.freq[o.most]) o.most = s;
 
-        e = c;
         return o;
       },
       { freq: {}, most: '' }
     );
-    let most = o.most;
-    let result = [most, e];
+    let result = o.most;
+
     return result;
   }
 

@@ -16,7 +16,7 @@ class WeatherCard extends Component {
   }
 
   getWeatherIcon() {
-    const result = this.props.result[0];
+    const result = this.props.result;
 
     switch (result) {
       case 'Clear':

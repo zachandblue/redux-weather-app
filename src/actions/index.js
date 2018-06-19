@@ -13,13 +13,13 @@ export function fetchWeather(request) {
 export function asyncFetchWeather(city) {
   return async dispatch => {
     const url = `${ROOT_URL}&q=${city},us`;
+    console.log(url);
     try {
       const request = await axios.get(url);
+      dispatch(fetchWeather(request));
     } catch (error) {
       console.log(error);
     }
-
-    dispatch(fetchWeather(request));
   };
 }
 
