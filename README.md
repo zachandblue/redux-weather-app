@@ -1,3 +1,5 @@
+Demo at https://redux-weather-app-55a8d.firebaseapp.com/
+
 This is a 5 Day Forecast app build with React and Redux. I didn't have to rely too heavily on Redux for this, as it just makes one GET request to the Open Weather Map Api from https://openweathermap.org/. The tricky part was working with the data that was returned.
 
 It returns weather data for the next five days in three-hour chunks. I wanted the App to show the day, the general forecast, and the high and low temps.
